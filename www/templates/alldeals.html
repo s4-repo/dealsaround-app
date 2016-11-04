@@ -1,0 +1,15 @@
+<view title="'DEals'">
+
+  <content has-header="true" has-subheader="true">
+    <div class="card item item-avatar" ng-repeat="dl in deals">
+      <img src="./img/{{dl.imgs}}">
+      <div class="item item-divider">
+        {{dl.category}}
+      </div>
+      <div class="item item-text-wrap">
+        {{dl.description}}
+      </div>
+    </div>
+  </content>
+
+</view>

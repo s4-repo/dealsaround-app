@@ -24,6 +24,12 @@ angular.module('deals', ['ionic', 'deals.services', 'deals.controllers'])
                 url: '/userHome',
                 templateUrl: 'templates/home.html',
                 controller: 'DealsHomeCtrl'
+            })
+
+            .state('all-deals', {
+                url: '/allDeals',
+                templateUrl: 'templates/alldeals.html',
+                controller: 'AllDealsCtrl'
             });
 
         // if none of the above states are matched, use this as the fallback
