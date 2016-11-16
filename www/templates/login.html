@@ -1,13 +1,16 @@
 <view title="'Home'">
   <content has-header="true" has-subheader="true">
-    <div class="list list-inset">
-      <label class="item item-input">
-        <input type="text" placeholder="Username">
-      </label>
-      <label class="item item-input">
-        <input type="text" placeholder="Password">
-      </label>
+    <div ng-if="userName == ''">
+      <div class="list list-inset">
+        <label class="item item-input">
+          <input type="text" placeholder="Username">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Password">
+        </label>
+      </div>
+      <a class="button button-block button-positive activated" ng-click="loginUser()">Login</a>
+      <!-- <a class="button button-block button-positive activated" href="#/userHome">Login</a> -->
     </div>
-    <a class="button button-block button-positive activated" href="#/userHome">Login</a>
-  </content>  
+  </content>
 </view>
