@@ -20,6 +20,12 @@ angular.module('deals', ['ionic', 'deals.services', 'deals.controllers'])
                 controller: 'DealsLoginCtrl'
             })
 
+            .state('invalid-login', {
+                url : '/invalidLogin',
+                templateUrl: 'templates/invalidLogin.html',
+                controller: 'InvalidLoginCtrl'
+            })
+
             .state('user-home', {
                 url: '/userHome',
                 templateUrl: 'templates/home.html',
